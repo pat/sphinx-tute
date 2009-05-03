@@ -18,10 +18,9 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: sphinx-tute_development
+  database: sphinx_tute_dev
   pool: 5
-  username: root
-  password:
+  username: sphinx_tute_dev
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -41,8 +40,6 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: sphinx-tute_production
+  database: sphinx_tute_production
   pool: 5
-  username: root
-  password: 
-  socket: /tmp/mysql.sock
+  username: sphinx_tute
