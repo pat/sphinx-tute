@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090504000002) do
+ActiveRecord::Schema.define(:version => 20090504154534) do
 
   create_table "places", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20090504000002) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "delta",       :default => true, :null => false
   end
 
   add_index "places", ["lat"], :name => "index_places_on_lat"
