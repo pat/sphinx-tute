@@ -42,3 +42,5 @@ end
 
 HiltonLatitude  = (Math::PI *   36.137199)/180
 HiltonLongitude = (Math::PI * -115.152973)/180
+
+Hilton = [HiltonLatitude, HiltonLongitude]

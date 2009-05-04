@@ -67,6 +67,10 @@ namespace :thinking_sphinx do
     start
   end
   
+  task :shared_sphinx_folder, :roles => :web do
+    sudo "mkdir -p #{shared_path}/db/sphinx/production"
+  end
+
   def rake(*tasks)
     tasks.each do |t|
       run "cd #{current_path} && rake #{t} RAILS_ENV=production"
