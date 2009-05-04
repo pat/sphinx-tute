@@ -1,0 +1,10 @@
+development:
+  enable_star: 1
+  min_infix_len: 1
+test:
+  enable_star: 1
+  min_infix_len: 1
+production:
+  enable_star: 1
+  min_infix_len: 1
+  searchd_file_path: "/var/www/sphinx-tute/shared/db/sphinx/production/"

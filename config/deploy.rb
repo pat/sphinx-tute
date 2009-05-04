@@ -30,3 +30,9 @@ end
 deploy.task :spinner, :roles => :web do
   # nothing
 end
+
+thinking_sphinx.task :share_sphinx_files, :roles => :web do
+  run "mkdir -p #{shared_path}/db/sphinx/production"
+end
+
+after "deploy:setup", "thinking_sphinx:share_sphixn_files"
