@@ -1,6 +1,6 @@
 class AddDeltaToPlaces < ActiveRecord::Migration
   def self.up
-    add_column :places, :delta, :boolean, :default => true, :null => false
+    # add_column :places, :delta, :boolean, :default => true, :null => false
   end
 
   def self.down

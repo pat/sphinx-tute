@@ -10,6 +10,7 @@ class CreatePlaces < ActiveRecord::Migration
       t.float   :lng
       t.text    :description
       t.timestamps
+      t.boolean :delta, :default => true, :null => false
     end
     
     add_index :places, :lat
